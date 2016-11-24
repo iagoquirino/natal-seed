@@ -1,0 +1,50 @@
+<form jd-panel ng-controller="app.core.mysubmodule.myfeature1.Myfeature1Ctrl as myfeature1Ctrl" name="myfeature1Form" jd-title="feature-child">
+
+    <div class="row">
+    	<input type="text" jd-input jd-label="name" ng-model="myfeature1Ctrl.child.name">
+    </div>
+
+    <div class="row">
+    	<input type="text" jd-input jd-label="age" ng-model="myfeature1Ctrl.child.age">
+    </div>
+
+    <div class="row">
+    	<input type="text" jd-input jd-label="gift" ng-model="myfeature1Ctrl.child.gift">
+    </div>
+
+    <div class="row">
+    	<input type="text" jd-input jd-label="address" ng-model="myfeature1Ctrl.child.address">
+    </div>
+
+    <div class="row">
+    	<input type="text" jd-input jd-label="phone" ng-model="myfeature1Ctrl.child.phone">
+    </div>
+
+    <div class="row">
+    	<div class="col-xs-12">
+    		<button class="btn btn-primary" ng-click="myfeature1Ctrl.save()" jd-i18n>btn_save</button>
+    	</div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="col-md-3"><b jd-i18n>name</b></div>
+      <div class="col-md-1"><b jd-i18n>age</b></div>
+      <div class="col-md-2"><b jd-i18n>address</b></div>
+      <div class="col-md-2"><b jd-i18n>phone</b></div>
+      <div class="col-md-2"><b jd-i18n>gift</b></div>
+      <div class="col-md-1">&nbsp;</div>
+    </div>
+
+    <hr />
+
+    <div class="row" ng-repeat="item in myfeature1Ctrl.children">
+      <div class="col-md-3">{{item.name}}</div>
+      <div class="col-md-1">{{item.age}}</div>
+      <div class="col-md-2">{{item.address}}</div>
+      <div class="col-md-2">{{item.phone}}</div>
+      <div class="col-md-2">{{item.gift}}</div>
+      <div class="col-md-1"><button class="btn btn-danger" ng-click="myfeature1Ctrl.remove()" jd-i18n>btn_remove</button></div>
+    </div>
+</form>

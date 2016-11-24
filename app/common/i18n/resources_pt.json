@@ -1,0 +1,17 @@
+{
+	"resources": {
+		"natal": "natal",
+		"feature-child": "Adicionar Crianças",
+		"btn_save": "Salvar",
+		"btn_remove": "Remover",
+		"name": "Nome da Criança",
+		"age": "Idade",
+		"gift": "Presente",
+		"address": "Endereço",
+		"phone": "Telefone",
+		"message": "Criança adicionada com sucesso!",
+		"remove_message": "Criança removida com sucesso!"
+	},
+	"regexResources": {
+	}
+}
