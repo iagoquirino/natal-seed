@@ -35,7 +35,7 @@ jd.factory.newController('app.core.mysubmodule.myfeature1.Myfeature1Ctrl', ['jed
     }
 
     function reset(){
-      vm.child = {}
+      vm.child = {};
     }
 
 }]);
